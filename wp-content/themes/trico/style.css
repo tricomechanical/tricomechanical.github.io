@@ -88,8 +88,7 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 	background-repeat: repeat-x;
 	padding: 10px;
 	margin-right: 10px;
-
-	float: right;
+	float: left;
 	overflow: hidden;
 	width: 210px;
 }
@@ -180,7 +179,8 @@ div.menu,
 #main,
 #wrapper {
 	margin: 0 auto;
-	width: 940px;
+	width: auto;
+	padding: 0 50px 0 50px;
 	background: url(images/back-body.gif) repeat-x; 
 }
 #wrapper {
@@ -205,7 +205,7 @@ div.menu,
 }
 #site-generator {
 	float: right;
-	width: 220px;
+	width: 20px;
 }
 
 
@@ -392,6 +392,9 @@ a:hover {
 	float: left;
 }
 
+#header-image, .header-image{
+	width: 100%;
+}
 
 /* =Menu
 -------------------------------------------------------------- */
@@ -405,7 +408,7 @@ a:hover {
 #access .menu-header,
 div.menu {
 	font-size: 13px;
-	margin-left: 12px;
+	margin-left: 0px;
 	width: 928px;
 }
 #access .menu-header ul,
@@ -419,6 +422,9 @@ div.menu ul {
 div.menu li {
 	float: left;
 	position: relative;
+}
+.topnav{
+	overflow: hidden;
 }
 #access a {
 	color: #333;
@@ -483,9 +489,10 @@ div.menu li {
 #main {
 	clear: both;
 	overflow: hidden;
-	padding: 10px 0 0 0;
+	padding: 10px 20px 0 20px;
 	background: ;
 	background-color: #DBDBDB;
+	min-width: 250px;
 }
 /*#content {
 	margin-bottom: 18px;
@@ -496,7 +503,8 @@ div.menu li {
 	background-image: url(images/main-bg.jpg);
 	background-repeat: repeat-x;
 	color: #333;
-	padding: 10px;
+	padding: 0 30px 0 30px;
+	min-width: 250px;
 }
 /*#content p,
 #content ul,
@@ -1168,7 +1176,7 @@ h3#reply-title {
 	margin-left: 0;
 }
 .widget-area ul ul li {
-	margin-left: 18px;
+	margin-left: 0px;
 
 }
 .widget-area ul ul {
