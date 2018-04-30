@@ -393,7 +393,8 @@ a:hover {
 }
 
 #header-image, .header-image{
-	width: 100%;
+	width: 80%;
+	margin-left: 10%
 }
 
 /* =Menu
@@ -503,7 +504,7 @@ div.menu li {
 	background-image: url(images/main-bg.jpg);
 	background-repeat: repeat-x;
 	color: #333;
-	padding: 0 30px 0 30px;
+	padding: 0 30px 0 10px;
 	min-width: 250px;
 }
 /*#content p,
@@ -796,12 +797,12 @@ body.page .edit-link {
 /* =Gallery listing
 -------------------------------------------------------------- */
 
-.format-gallery .size-thumbnail img,
+.format-gallery #format-gallery .size-thumbnail img,
 .category-gallery .size-thumbnail img {
 	border: 10px solid #f1f1f1;
 	margin-bottom: 0;
 }
-.format-gallery .gallery-thumb,
+.format-gallery #gallery-thumb .gallery-thumb,
 .category-gallery .gallery-thumb {
 	float: left;
 	margin-right: 20px;
@@ -892,7 +893,7 @@ img.aligncenter {
 .gallery {
 	margin: 12px auto 18px;
 }
-.gallery .gallery-item {
+.gallery #gallery-item {
 	float: left;
 /*	margin-top: 0; */
 	margin: 12px auto;
@@ -1273,6 +1274,7 @@ h3#reply-title {
 }
 #secondary {
 }
+
 
 /* Footer widget areas */
 #footer-widget-area {
